@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@1&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Disappearing Ninjas</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Disappearing Ninjas thru jQuery</h1>
+        <br>
+        <img src="ninja.jpg" alt="ninja">
+        <img src="orangeninja.jpg" alt="orange one">
+        <img src="oldninja.jpg" alt="wise one">
+        <img src="fireninja.jpg" alt="fireninja">
+        <br>
+        <img src="greeninja.jpg" alt="nature ninja">
+        <img src="cuteninja.jpg" alt="cute ninja">
+        <img src="scubaninja.jpg" alt="scuba diving ninja">
+        <img src="mtninja.jpg" alt="mountain ninja">
+        <br>
+        <button class="restore">Bring them Back!</button>
+    </div>
+    <script>
+        $(document).ready(function(){
+
+            $('img').click(function(){
+                $(this).fadeOut('slow')
+            })
+
+            $('button').click(function(){
+                $('img').show('slow')
+            })
+        })
+    </script>
+</body>
+</html>

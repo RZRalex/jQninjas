@@ -1,0 +1,36 @@
+body *{
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.wrapper{
+    width: 92%;
+    margin: 1em;
+    padding: 2em;
+    background-color: antiquewhite;
+
+}
+
+h1{
+    text-align: center;
+}
+
+img{
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    margin: 1em;
+}
+
+button{
+    padding: 1px 16px;
+    display: inline;
+    font-size: x-large;
+    margin-right: 2em;
+    border-width: 3px;
+    border-radius: 18px;
+    border-style: outset;
+    background-color: forestgreen;
+}
